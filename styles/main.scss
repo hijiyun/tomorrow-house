@@ -1,3 +1,14 @@
+@import './constants/coloors';
+
 @import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
+
+$coke: 1;
+p {
+  line-height: $coke;
+}
+
+a {
+  line-height: 1;
+}
