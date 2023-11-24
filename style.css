@@ -260,6 +260,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 /**
@@ -343,6 +344,7 @@ textarea {
    */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
+  appearance: button;
   outline-offset: -2px; /* 2 */
 }
 
@@ -445,6 +447,61 @@ ul,
 ol {
   list-style: none;
   padding-left: 0;
+}
+
+.visually-hidden {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.visually-hidden:not(caption) {
+  position: absolute !important;
+}
+
+@media screen and (min-width: 768px) {
+  .sm-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .md-only {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .md-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .lg-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sm-hidden {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mg-hidden {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lg-hidden {
+    display: none !important;
+  }
 }
 
 .tag-green, .tag-grey, .tag-red {
