@@ -612,6 +612,88 @@ ol {
   font-weight: 400;
 }
 
+.button-ghost, .button-outlined, .button-secondary, .button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.button-ghost:disabled, .button-outlined:disabled, .button-secondary:disabled, .button-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: #3da5f5;
+  transition: background-color 180ms ease-in-out;
+}
+.button-primary:not(:disabled):hover {
+  background-color: #3186c4;
+}
+
+.button-secondary {
+  color: #3f4150;
+  background-color: #e0e2e7;
+  transition: background-color 180ms ease-in-out;
+}
+.button-secondary:not(:disabled):hover {
+  background-color: #b2b3b9;
+}
+
+.button-outlined {
+  color: #3da5f5;
+  background-color: #ffffff;
+  border: 1px solid #3da5f5;
+  transition: background-color 180ms ease-in-out;
+}
+.button-outlined:not(:disabled):hover {
+  background-color: #ecf6fe;
+}
+
+.button-ghost {
+  color: #3f4150;
+  background-color: transparent;
+  transition: color 180ms ease-in-out;
+}
+.button-ghost:hover {
+  color: #8c8d96;
+}
+.button-ghost:disabled:hover {
+  background-color: transparent;
+  color: #3f4150;
+}
+
+.btn-32 {
+  font-size-14: 14px;
+  line-height-14: 24px;
+  letter-spacing-14: -0.001em;
+  height: 32px;
+}
+
+.btn-40 {
+  font-size-16: 16px;
+  line-height-16: 24px;
+  letter-spacing-16: -0.001em;
+  height: 40px;
+}
+
+.btn-48 {
+  font-size-16: 16px;
+  line-height-16: 24px;
+  letter-spacing-16: -0.001em;
+  height: 48px;
+}
+
+.btn-55 {
+  font-size-18: 18px;
+  line-height-18: 28px;
+  letter-spacing-18: -0.002em;
+  height: 55px;
+}
+
 /*
 * MOBILE (< 768px) -------------------
 * fixture .................. sm
