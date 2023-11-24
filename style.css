@@ -532,6 +532,86 @@ ol {
   font-size: 24px;
 }
 
+.price-off, .price-16,
+.price-20,
+.price-32 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.price-off .amount, .price-16 .amount,
+.price-20 .amount,
+.price-32 .amount {
+  font-family: "Tahoma", sans-serif;
+  line-height: 1;
+}
+.price-off .currency, .price-16 .currency,
+.price-20 .currency,
+.price-32 .currency {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.price-16,
+.price-20,
+.price-32 {
+  color: #191a20;
+}
+.price-16 .amount,
+.price-20 .amount,
+.price-32 .amount {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.price-16 .currency,
+.price-20 .currency,
+.price-32 .currency {
+  font-weight: 700;
+}
+
+.price-16 .amount {
+  font-size: 16px;
+}
+.price-16 .currency {
+  font-size-14: 14px;
+  line-height-14: 24px;
+  letter-spacing-14: -0.001em;
+}
+
+.price-20 .amount {
+  font-size: 20px;
+}
+.price-20 .currency {
+  font-size-16: 16px;
+  line-height-16: 24px;
+  letter-spacing-16: -0.001em;
+}
+
+.price-32 .amount {
+  font-size: 32px;
+}
+.price-32 .currency {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.price-off {
+  color: #8c8d96;
+}
+.price-off .amount {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.price-off .currency {
+  font-size-14: 14px;
+  line-height-14: 24px;
+  letter-spacing-14: -0.001em;
+  font-weight: 400;
+}
+
 /*
 * MOBILE (< 768px) -------------------
 * fixture .................. sm
