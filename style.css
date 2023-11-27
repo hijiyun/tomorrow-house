@@ -897,7 +897,10 @@ i {
   justify-content: flex-start;
 }
 .gnb-nav-item {
-  margin-right: 24px;
+  margin-right: 8px;
+}
+.gnb-nav-item.is-active a, .gnb-nav-item:hover a {
+  color: #3da5f5;
 }
 .gnb-nav-item:last-child {
   margin-right: 0;
@@ -906,6 +909,8 @@ i {
   font-size-18: 18px;
   line-height-18: 28px;
   letter-spacing-18: -0.002em;
+  display: block;
+  padding: 8px;
   font-weight: 700;
 }
 
@@ -917,7 +922,7 @@ i {
   height: 32px;
   font-size: 24px;
   color: #8c8d96;
-  transition: color 300ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 .gnb-icon-button.is-menu {
   color: #3da5f5;
