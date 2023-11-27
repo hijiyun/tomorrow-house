@@ -909,6 +909,23 @@ i {
   font-weight: 700;
 }
 
+.gnb-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #8c8d96;
+  transition: color 300ms ease-in-out;
+}
+.gnb-icon-button.is-menu {
+  color: #3da5f5;
+}
+.gnb-icon-button:active {
+  color: #3186c4;
+}
+
 /*
 * MOBILE (< 768px) -------------------
 * fixture .................. sm
@@ -1060,20 +1077,8 @@ i {
   align-items: center;
   justify-content: flex-end;
 }
-.gnb-search-button {
+.gnb .gnb-icon-button.is-search {
   margin-right: 4px;
-}
-.gnb-icon-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  font-size: 24px;
-  color: #8c8d96;
-}
-.gnb-menu-button {
-  color: #3da5f5;
 }
 .gnb .logo {
   position: absolute;
