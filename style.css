@@ -1145,6 +1145,21 @@ i {
   .gnb-right .button-group .gnb-icon-button {
     margin-right: 8px;
   }
+  .gnb-right .button-group .gnb-auth {
+    margin-left: 8px;
+  }
+  .gnb-right .button-group .gnb-auth a {
+    font-size-14: 14px;
+    line-height-14: 24px;
+    letter-spacing-14: -0.001em;
+    font-weight: 700;
+  }
+  .gnb-right .button-group .gnb-auth a:first-child {
+    margin-right: 12px;
+  }
+  .gnb-right .button-group .gnb-auth a:hover {
+    color: #3da5f5;
+  }
   .gnb-wrapper {
     height: 80px;
   }
