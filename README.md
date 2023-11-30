@@ -80,3 +80,27 @@
   </div>
 </div>
 ```
+
+### 2. Sidebar
+
+- 로그인을 하지 않은 경우
+
+```html
+<div class="sidebar-auth">
+  <a class="btn-40 button-outlined" href="/">로그인</a>
+  <a class="btn-40 button-primary" href="/">회원가입</a>
+</div>
+```
+
+- 로그인을 했을 경우
+
+```html
+<div class="sidebar-user">
+  <a href="/">
+    <div class="avatar-24">
+      <img src="./assets/images/user-img-03.webp" alt="userImg" />
+    </div>
+    <strong class="username">제니</strong>
+  </a>
+</div>
+```
