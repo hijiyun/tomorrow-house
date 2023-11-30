@@ -8,6 +8,10 @@
     width: $button-size;
     height: $button-size;
     overflow: hidden;
+    background-position: center center;
+    background-image: url('../../assets/images/img-user-default.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     border: 3px solid $white;
     border-radius: 50%;
     transition: border-color 200ms ease-in-out;
@@ -68,6 +72,7 @@
     button {
       width: 100%;
       @include flexbox(start);
+      @include text-style(16, $primary);
       height: 44px;
       padding: 0 8px;
       border-radius: 2px;
