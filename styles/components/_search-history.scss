@@ -1,0 +1,58 @@
+.search-history {
+  $close-button-size: 32px;
+
+  &-header {
+    @include flexbox(between);
+    margin-bottom: 8px;
+
+    .title,
+    button {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.001em;
+      color: $secondary;
+    }
+  }
+
+  &-item {
+    position: relative;
+    .word-button {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.001em;
+      color: $primary;
+      width: 100%;
+      text-align: start;
+      padding: 10px $close-button-size 10px 8px;
+      font-weight: 400;
+    }
+
+    .delete-button {
+      @include flexbox;
+      position: absolute;
+      right: 0;
+      top: 6px;
+      width: $close-button-size;
+      height: $close-button-size;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.001em;
+      color: $tertiary;
+    }
+  }
+
+  &-content {
+    .placeholder {
+      @include flexbox(start);
+      width: 100%;
+      height: 44px;
+      padding: 0 8px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.001em;
+      font-weight: 400;
+      color: $tertiary;
+    }
+  }
+}
